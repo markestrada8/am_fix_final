@@ -1,0 +1,18 @@
+@use "mixins";
+
+.blog-form-wrapper {
+    @include mixins.base-grid();
+    grid-template-columns: 1 fr;
+    padding: 42px;
+
+    @include mixins.input-element();
+    input {
+        margin-bottom: 0px;
+    }
+
+    // .image-uploaders {
+    //     @include base-grid();
+    //     grid-template-columns: 200px;
+
+    // }
+}
